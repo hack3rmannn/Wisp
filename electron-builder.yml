@@ -1,0 +1,19 @@
+appId: com.wisp.companion
+productName: Wisp
+win:
+  target: nsis
+  icon: assets/icon.ico
+nsis:
+  oneClick: true
+  perMachine: false
+  createDesktopShortcut: false
+  createStartMenuShortcut: true
+directories:
+  output: release
+files:
+  - out/**/*
+  - assets/**/*
+  - "!node_modules/**/*"
+  - node_modules/uiohook-napi/**/*
+  - node_modules/ws/**/*
+  - node_modules/electron-store/**/*

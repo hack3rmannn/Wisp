@@ -1,0 +1,38 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #ECEEED;
+  user-select: none;
+}
+
+/* Panel view — dark background */
+body.panel-view {
+  background: #0F1110;
+}
+
+/* Overlay view — fully transparent */
+body.overlay-view {
+  background: transparent;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+input, select {
+  font-family: inherit;
+  color: inherit;
+}
